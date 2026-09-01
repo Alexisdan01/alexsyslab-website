@@ -98,13 +98,66 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-	}
+	/* Alex Garcia four-corner portfolio gradient */
+body {
+    background-color: #064e4b;
+
+    background-image:
+        url("images/overlay.png"),
+
+        /* Upper-left: midnight navy */
+        radial-gradient(
+            ellipse at top left,
+            #071426 0%,
+            rgba(7, 20, 38, 0) 55%
+        ),
+
+        /* Upper-right: cyan-blue */
+        radial-gradient(
+            ellipse at top right,
+            #0e7490 0%,
+            rgba(14, 116, 144, 0) 55%
+        ),
+
+        /* Lower-left: dark teal */
+        radial-gradient(
+            ellipse at bottom left,
+            #064e4b 0%,
+            rgba(6, 78, 75, 0) 55%
+        ),
+
+        /* Lower-right: emerald */
+        radial-gradient(
+            ellipse at bottom right,
+            #15803d 0%,
+            rgba(21, 128, 61, 0) 55%
+        ),
+
+        /* Underlying blue-to-green transition */
+        linear-gradient(
+            to bottom,
+            #075985 0%,
+            #0e7490 35%,
+            #0f766e 68%,
+            #0b5d3b 100%
+        );
+
+    background-repeat:
+        repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+
+    background-size:
+        auto,
+        100% 100%,
+        100% 100%,
+        100% 100%,
+        100% 100%,
+        100% 100%;
+}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -120,7 +173,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: #064e4b;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
