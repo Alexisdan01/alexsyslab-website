@@ -2220,7 +2220,7 @@ body {
 
 		select option {
 			color: #ffffff;
-			background: #935d8c;
+			background: #064e4b;
 		}
 
 	input[type="checkbox"] + label,
@@ -2238,7 +2238,7 @@ body {
 	input[type="radio"]:checked + label:before {
 		background-color: #ffffff;
 		border-color: #ffffff;
-		color: #935d8c;
+		color: #064e4b;
 	}
 
 	input[type="checkbox"]:focus + label:before,
