@@ -3858,7 +3858,7 @@ body {
 			border-radius: 50% !important;
 			clip-path: circle(50% at 50% 50%);
 			object-fit: cover;
-			object-position: 50% 30%;
+			object-position: 50% 25%;
 		}
 		
 		@media screen and (max-width: 736px) {
