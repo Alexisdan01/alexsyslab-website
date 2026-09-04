@@ -3064,7 +3064,7 @@ body {
 				height: 16em;
 				border-radius: 50%;
 				object-fit: cover;
-				object-position: 50% 35%;
+				object-position: 50% 25%;
 			}
 
 		@media screen and (max-width: 980px) {
