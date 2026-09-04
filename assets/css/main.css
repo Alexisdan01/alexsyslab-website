@@ -3841,34 +3841,34 @@ body {
 
 		}
 
-#about .profile-photo {
-	width: 16em;
-	height: 16em;
-	padding: 0.65em;
-	border-radius: 50%;
-	box-sizing: content-box;
-	flex-shrink: 0;
-}
-
-#about .profile-photo img {
-	display: block;
-	width: 16em !important;
-	height: 16em !important;
-	max-width: none;
-	border-radius: 50% !important;
-	clip-path: circle(50% at 50% 50%);
-	object-fit: cover;
-	object-position: 50% 30%;
-}
-
-@media screen and (max-width: 736px) {
-	#about .profile-photo {
-		width: 12em;
-		height: 12em;
-	}
-
-	#about .profile-photo img {
-		width: 12em !important;
-		height: 12em !important;
-	}
-}
+		#about .profile-photo {
+			width: 16em;
+			height: 16em;
+			padding: 0.65em;
+			border-radius: 50%;
+			box-sizing: content-box;
+			flex-shrink: 0;
+		}
+		
+		#about .profile-photo img {
+			display: block;
+			width: 16em !important;
+			height: 16em !important;
+			max-width: none;
+			border-radius: 50% !important;
+			clip-path: circle(50% at 50% 50%);
+			object-fit: cover;
+			object-position: 50% 30%;
+		}
+		
+		@media screen and (max-width: 736px) {
+			#about .profile-photo {
+				width: 12em;
+				height: 12em;
+			}
+		
+			#about .profile-photo img {
+				width: 12em !important;
+				height: 12em !important;
+			}
+		}
