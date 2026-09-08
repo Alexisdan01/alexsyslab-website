@@ -4253,7 +4253,7 @@ body {
 	margin-bottom: 2.5em;
 }
 
-#experience > .major h2::after {
+#main #experience > .major h2::after {
 	background: linear-gradient(90deg, #6695ff, #49cfc5);
 }
 
