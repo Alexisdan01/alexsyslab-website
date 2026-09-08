@@ -3881,9 +3881,11 @@ body {
 	}
 
 	#skills .skill-categories {
-		display: grid;
-		grid-template-columns: repeat(4, minmax(0, 1fr));
-		gap: 1.25em;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.5em;
+	max-width: 70em;
+	margin: 0 auto;
 	}
 
 	#skills .skill-card {
@@ -4015,11 +4017,6 @@ body {
 			visibility: visible;
 		}
 
-	@media screen and (max-width: 1280px) {
-		#skills .skill-categories {
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-		}
-	}
 
 	@media screen and (max-width: 736px) {
 		#skills .skills-intro {
