@@ -3929,13 +3929,12 @@ body {
 		}
 
 	#skills .skill-list {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 0.65em;
-		margin: 0;
-		padding: 0;
-		list-style: none;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.65em;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 	}
 
 	#skills .skill-item {
@@ -3943,7 +3942,7 @@ body {
 	}
 
 	#skills .skill-button {
-		width: auto;
+		width: 100%;
 		height: auto;
 		min-height: 2.25em;
 		margin: 0;
@@ -3969,7 +3968,7 @@ body {
 		#skills .skill-button:focus-visible {
 			border-color: #59c6ba;
 			background: #f2fbfa;
-			color: #237f77;
+			color: #237f77 !important;
 			transform: translateY(-1px);
 			outline: none;
 		}
