@@ -4242,3 +4242,215 @@ body {
 		transition: none;
 	}
 }
+
+/* Professional Experience */
+
+#experience {
+	background: #ffffff;
+}
+
+#experience > .major {
+	margin-bottom: 2.5em;
+}
+
+#experience > .major h2::after {
+	background: linear-gradient(90deg, #6695ff, #49cfc5);
+}
+
+#experience .experience-list {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 1.25em;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#experience .experience-card {
+	--experience-accent: #83aaff;
+	--experience-tint: #edf3ff;
+	--experience-ink: #315b9e;
+
+	display: grid;
+	grid-template-columns: minmax(0, 13em) minmax(0, 1fr);
+	gap: 2em;
+	padding: 1.5em 1.75em;
+	border: 1px solid #dde3eb;
+	border-left: 0.5em solid var(--experience-accent);
+	border-radius: 0.65em;
+	background: #ffffff;
+	box-shadow: 0 0.25em 1em rgba(60, 70, 85, 0.035);
+	text-align: left;
+}
+
+/* Color variations */
+
+#experience .experience-purple {
+	--experience-accent: #ac95ed;
+	--experience-tint: #f2edff;
+	--experience-ink: #6544a6;
+}
+
+#experience .experience-pink {
+	--experience-accent: #eb91be;
+	--experience-tint: #fcecf4;
+	--experience-ink: #a33b70;
+}
+
+#experience .experience-teal {
+	--experience-accent: #72d3ca;
+	--experience-tint: #e7f8f5;
+	--experience-ink: #21776f;
+}
+
+/* Employer, dates, and icon */
+
+#experience .experience-summary {
+	min-width: 0;
+	padding-right: 1.5em;
+	border-right: 1px solid #dde3eb;
+	overflow-wrap: anywhere;
+}
+
+#experience .experience-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3.5em;
+	height: 3.5em;
+	margin-bottom: 0.6em;
+	border-radius: 50%;
+	background: var(--experience-tint);
+	color: var(--experience-ink);
+}
+
+#experience .experience-icon i {
+	font-size: 1.5em;
+}
+
+#experience .experience-dates {
+	margin: 0 0 0.65em;
+	color: #667085;
+	font-size: 0.9em;
+	line-height: 1.5;
+}
+
+#experience .experience-dates::after {
+	content: "";
+	display: block;
+	width: 1.6em;
+	height: 1px;
+	margin-top: 0.55em;
+	background: #a5afbf;
+}
+
+#experience .experience-company {
+	margin: 0 0 0.2em;
+	color: #394354;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+#experience .experience-field {
+	margin: 0;
+	color: #667085;
+	font-size: 0.85em;
+	line-height: 1.4;
+}
+
+/* Position and accomplishments */
+
+#experience .experience-details {
+	min-width: 0;
+	align-self: center;
+	overflow-wrap: anywhere;
+}
+
+#experience .experience-details h4 {
+	margin: 0 0 0.6em;
+	color: #343e50;
+	font-size: 1.45em;
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+#experience .experience-highlights {
+	margin: 0 0 1em;
+	padding: 0;
+	list-style: none;
+}
+
+#experience .experience-highlights li {
+	position: relative;
+	margin: 0 0 0.55em;
+	padding: 0 0 0 1.15em;
+	color: #606b7d;
+	line-height: 1.6;
+}
+
+#experience .experience-highlights li::before {
+	content: "";
+	position: absolute;
+	top: 0.6em;
+	left: 0;
+	width: 0.45em;
+	height: 0.45em;
+	border-radius: 50%;
+	background: var(--experience-accent);
+}
+
+/* Skill tags */
+
+#experience .experience-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.55em;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#experience .experience-tags li {
+	max-width: 100%;
+	margin: 0;
+	padding: 0.45em 0.85em;
+	border-radius: 2em;
+	background: var(--experience-tint);
+	color: var(--experience-ink);
+	font-size: 0.8em;
+	line-height: 1.35;
+}
+
+/* Smaller desktop and tablet screens */
+
+@media screen and (max-width: 980px) {
+	#experience .experience-card {
+		grid-template-columns: minmax(0, 10em) minmax(0, 1fr);
+		gap: 1.25em;
+		padding: 1.4em;
+	}
+
+	#experience .experience-summary {
+		padding-right: 1em;
+	}
+}
+
+/* Phones: employer information above the description */
+
+@media screen and (max-width: 736px) {
+	#experience .experience-card {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 1.25em;
+		padding: 1.25em;
+	}
+
+	#experience .experience-summary {
+		padding: 0 0 1em;
+		border-right: 0;
+		border-bottom: 1px solid #dde3eb;
+	}
+
+	#experience .experience-details h4 {
+		font-size: 1.3em;
+	}
+}
