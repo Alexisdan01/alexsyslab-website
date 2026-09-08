@@ -4238,7 +4238,7 @@ body {
 	}
 
 	@media (prefers-reduced-motion: reduce) {
-		#projects .project-card {
-							transition: none;
-		}
+	#projects .project-card {
+		transition: none;
 	}
+}
