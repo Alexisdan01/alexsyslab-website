@@ -4093,6 +4093,22 @@ body {
 			max-height: 18em;
 			object-fit: contain;
 		}
+	/* Scholarly Pulse image sizing */
+	#projects .scholarly-project .project-image {
+	    min-height: 10.5em;
+	    padding: 0.5em 1em;
+	}
+	
+	#projects .scholarly-project .project-image img {
+	    width: 100%;
+	    height: auto;
+	    max-height: 9.5em;
+	    object-fit: contain;
+	}
+	
+	#projects .scholarly-project .project-technologies {
+	    margin-bottom: 1em;
+	}
 
 	#projects .project-information {
 		display: flex;
