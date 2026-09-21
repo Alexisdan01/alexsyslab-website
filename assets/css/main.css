@@ -4509,3 +4509,172 @@ body {
 .construction-image figcaption a {
     color: inherit;
 }
+
+
+
+/* Achievements */
+
+#achievements .major {
+    margin-bottom: 3em;
+}
+
+#achievements .achievement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+
+/* Achievement Card */
+
+#achievements .achievement-card {
+    display: grid;
+    grid-template-columns: minmax(18em, 1.1fr) minmax(0, 0.9fr);
+    align-items: stretch;
+
+    border: solid 1px #dddddd;
+    border-radius: 0.75em;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0.4em 1.25em rgba(60, 70, 85, 0.06);
+
+    overflow: hidden;
+    text-align: left;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+#achievements .achievement-card:hover {
+    transform: translateY(-0.2em);
+
+    box-shadow:
+        0 0.7em 1.6em rgba(60, 70, 85, 0.10);
+}
+
+
+/* Images */
+
+#achievements .achievement-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 18em;
+
+    padding: 1em;
+
+    background: linear-gradient(
+        135deg,
+        #f4f9ff 0%,
+        #f5fffc 100%
+    );
+}
+
+
+#achievements .achievement-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-height: 20em;
+
+    object-fit: cover;
+
+    border-radius: 0.5em;
+}
+
+
+/* Text */
+
+#achievements .achievement-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 2.5em;
+}
+
+
+#achievements .achievement-information h3 {
+    margin: 0 0 0.75em 0;
+
+    color: #4a4f58;
+
+    font-size: 1.65em;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+
+#achievements .achievement-information p {
+    margin: 0;
+
+    color: #636363;
+
+    line-height: 1.7;
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 980px) {
+
+    #achievements .achievement-card {
+        grid-template-columns:
+            minmax(14em, 1fr)
+            minmax(0, 1fr);
+    }
+
+    #achievements .achievement-information {
+        padding: 1.75em;
+    }
+
+    #achievements .achievement-image {
+        min-height: 16em;
+    }
+
+}
+
+
+/* Phone */
+
+@media screen and (max-width: 736px) {
+
+    #achievements .major {
+        margin-bottom: 2em;
+    }
+
+    #achievements .achievement-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #achievements .achievement-image {
+        min-height: auto;
+        padding: 1em;
+    }
+
+    #achievements .achievement-image img {
+        height: auto;
+        max-height: none;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+
+    #achievements .achievement-information {
+        padding: 1.5em;
+    }
+
+    #achievements .achievement-information h3 {
+        font-size: 1.4em;
+    }
+
+}
