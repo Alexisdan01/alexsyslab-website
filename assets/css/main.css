@@ -4164,14 +4164,25 @@ body {
 			line-height: 1.25;
 		}
 
-	#projects .project-actions {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.75em;
-		margin: 0;
-		padding: 0;
-		list-style: none;
+		#projects .project-actions {
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    gap: 0.75em;
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
 	}
+
+		#projects .project-actions li {
+		    margin: 0;
+		    padding: 0;
+		}
+		
+		#projects .project-actions .button {
+		    min-width: 9em;
+		    margin: 0;
+		}
 
 		#projects .project-actions li {
 			margin: 0;
