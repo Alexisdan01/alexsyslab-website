@@ -4097,16 +4097,16 @@ body {
 			max-height: 18em;
 			object-fit: contain;
 		}
-	/* Scholarly Pulse image sizing */
+		/* Scholarly Pulse image sizing */
 	#projects .scholarly-project .project-image {
-	    min-height: 10.5em;
-	    padding: 0.5em 1em;
+	    min-height: 20em;
+	    padding: 1em;
 	}
 	
 	#projects .scholarly-project .project-image img {
-	    width: 100%;
+	    width: 95%;
 	    height: auto;
-	    max-height: 9.5em;
+	    max-height: 18em;
 	    object-fit: contain;
 	}
 	
