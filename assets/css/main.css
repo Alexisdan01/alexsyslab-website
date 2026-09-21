@@ -4536,7 +4536,6 @@ body {
 
     border: solid 1px #dddddd;
     border-radius: 0.75em;
-
     background: #ffffff;
 
     box-shadow:
@@ -4567,13 +4566,12 @@ body {
     justify-content: center;
 
     min-height: 18em;
-
-    padding: 1em;
+    padding: 1.25em;
 
     background: linear-gradient(
         135deg,
-        #f4f9ff 0%,
-        #f5fffc 100%
+        #f2f5f7 0%,
+        #eef6f4 100%
     );
 }
 
@@ -4589,6 +4587,28 @@ body {
     object-fit: cover;
 
     border-radius: 0.5em;
+}
+
+
+/* CTF Coin Image */
+
+#achievements .ctf-image img {
+    object-fit: contain;
+}
+
+
+/* Kohl's Logo */
+
+#achievements .company-logo-image {
+    padding: 2em;
+}
+
+#achievements .company-logo-image img {
+    width: 70%;
+    height: auto;
+    max-height: 14em;
+
+    object-fit: contain;
 }
 
 
@@ -4663,10 +4683,19 @@ body {
     }
 
     #achievements .achievement-image img {
+        width: 100%;
         height: auto;
         max-height: none;
+
         aspect-ratio: 16 / 9;
-        object-fit: cover;
+
+        object-fit: contain;
+    }
+
+    #achievements .company-logo-image img {
+        width: 65%;
+        max-height: 10em;
+        aspect-ratio: auto;
     }
 
     #achievements .achievement-information {
