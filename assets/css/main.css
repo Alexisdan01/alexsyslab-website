@@ -3943,10 +3943,14 @@ body {
 
 	#skills .skill-button {
 		width: 100%;
-		height: auto;
-		min-height: 2.25em;
+		height: 3.2em;
+		min-height: 3.2em;
 		margin: 0;
 		padding: 0.48em 0.85em;
+		display: flex;
+    	align-items: center;
+   		justify-content: center;
+
 		border: solid 1px #d9dce1;
 		border-radius: 2em;
 		background: #ffffff;
@@ -3959,7 +3963,7 @@ body {
 		letter-spacing: 0.02em;
 		text-transform: none;
 		white-space: normal;
-		cursor: help;
+		cursor: pointer;
 		transition: background-color 0.2s ease, border-color 0.2s ease,
 			color 0.2s ease, transform 0.2s ease;
 	}
